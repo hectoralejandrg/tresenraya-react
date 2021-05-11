@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-board: rgba(169, 36, 36, 0.5);
+  --color-line: rgba(36, 36, 169, 0.5);
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.Board {
+  display: flex;
+  height: 450px;
+  width: 450px;
+  border-top: solid var(--color-line);
+  border-left: solid var(--color-line);
+  border-right: solid var(--color-line);
+  flex-direction: column;
+}
+.Row {
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  width: 100%;
+  border-bottom: solid var(--color-line);
+}
+.Square {
+  width: 150px;
+  background-color: var(--color-board);
+  border-bottom: none;
+  border-left: 2px solid var(--color-line);
+  border-right: 2px solid var(--color-line);
+  font-weight: 800;
+  font-size: xx-large;
+}
+.Square:hover {
+  opacity: 0.8;
+}
+.New {
+  padding: 1rem;
+  background-color: rgba(36, 169, 36, 0.9);
+  margin: 0.5rem;
+  border-radius: 1rem;
+  font-weight: 800;
+  border: none;
+}
+.New:hover {
+  opacity: 0.8;
+}
+p {
+  margin: 1rem;
+  font-weight: 800;
+}
+span {
+  color: red;
+  font-size: larger;
+}
